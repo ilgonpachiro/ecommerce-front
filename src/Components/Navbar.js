@@ -53,7 +53,7 @@ export default function Navbar(){
 
 			<div class="right-side">
 				<div class="header-widget">
-					<a href="#" class="button border">Iniciá sesión</a>
+					<a href="#" class="button border">Logueate</a>
 					{/* <Button type="button" className="btn btn-default" onClick={this.open}>
          			 Login
         			</Button>
