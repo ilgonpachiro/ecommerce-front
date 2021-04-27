@@ -1,6 +1,74 @@
 import React from 'react';
 import LISTING01 from '../../images/listing-01.jpg'
 
+const toys = [{
+	name: 'test',
+	img: '../../images/listing-01.jpg',
+	id: '1',
+	price: '420'
+},{
+	name: 'test',
+	img: '../../images/listing-01.jpg',
+	id: '1',
+	price: '420'
+},{
+	name: 'test',
+	img: '../../images/listing-01.jpg',
+	id: '1',
+	price: '420'
+}];
+
+const listItems=toys.map((toy)=>{
+    return 	<div class="listing-item" key={toy.id}>
+	<a href="single-property-page-1.html" class="listing-img-container">
+
+		<div class="listing-badges">
+			<span class="featured">Featured</span>
+			<span>For Sale</span>
+		</div>
+
+		<div class="listing-img-content">
+			<span class="listing-price">{toy.price}</span>
+			<span class="like-icon with-tip" data-tip-content="Add to Bookmarks"></span>
+			<span class="compare-button with-tip" data-tip-content="Add to Compare"></span>
+		</div>
+
+		<div class="listing-carousel">
+			<div><img src={toy.price}alt=""/></div>
+			<div><img src={toy.price}alt=""/></div>
+			<div><img src={toy.price}alt=""/></div>
+		</div>
+	</a>
+
+	<div class="listing-content">
+
+		<div class="listing-title">
+			<h4><a href="single-property-page-1.html">{toy.name}</a></h4>
+			<a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps">
+				<i class="fa fa-map-marker"></i>
+				9364 School St. Lynchburg, NY
+			</a>
+
+			<a href="single-property-page-1.html" class="details button border">Details</a>
+		</div>
+
+		<ul class="listing-details">
+			<li>530 sq ft</li>
+			<li>1 Bedroom</li>
+			<li>3 Rooms</li>
+			<li>1 Bathroom</li>
+		</ul>
+
+		<div class="listing-footer">
+			<a href="#"><i class="fa fa-user"></i> David Strozier</a>
+			<span><i class="fa fa-calendar-o"></i> 1 day ago</span>
+		</div>
+
+	</div>
+
+</div>
+  })
+
 export default function Container() {
     return (
         <div class="container">
@@ -40,54 +108,7 @@ export default function Container() {
 			<div class="listings-container list-layout">
 
 				{/* <!-- Listing Item --> */}
-				<div class="listing-item">
-					<a href="single-property-page-1.html" class="listing-img-container">
-
-						<div class="listing-badges">
-							<span class="featured">Featured</span>
-							<span>For Sale</span>
-						</div>
-
-						<div class="listing-img-content">
-							<span class="listing-price">$275,000 <i>$520 / sq ft</i></span>
-							<span class="like-icon with-tip" data-tip-content="Add to Bookmarks"></span>
-							<span class="compare-button with-tip" data-tip-content="Add to Compare"></span>
-						</div>
-
-						<div class="listing-carousel">
-							<div><img src={LISTING01}alt=""/></div>
-							<div><img src={LISTING01} alt=""/></div>
-							<div><img src={LISTING01} alt=""/></div>
-						</div>
-					</a>
-
-					<div class="listing-content">
-
-						<div class="listing-title">
-							<h4><a href="single-property-page-1.html">Eagle Apartments</a></h4>
-							<a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps">
-								<i class="fa fa-map-marker"></i>
-								9364 School St. Lynchburg, NY
-							</a>
-
-							<a href="single-property-page-1.html" class="details button border">Details</a>
-						</div>
-
-						<ul class="listing-details">
-							<li>530 sq ft</li>
-							<li>1 Bedroom</li>
-							<li>3 Rooms</li>
-							<li>1 Bathroom</li>
-						</ul>
-
-						<div class="listing-footer">
-							<a href="#"><i class="fa fa-user"></i> David Strozier</a>
-							<span><i class="fa fa-calendar-o"></i> 1 day ago</span>
-						</div>
-
-					</div>
-
-				</div>
+				{listItems}
 				{/* <!-- Listing Item / End --> */}
 			</div>
 			{/* <!-- Listings Container / End --> */}
