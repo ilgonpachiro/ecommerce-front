@@ -10,7 +10,7 @@ export default function Footer(){
 			<div class="col-md-5 col-sm-6">
 				<img class="footer-logo" src={LOGO} alt=""/>
 				<br/><br/>
-				<p>Somos una empresa dedicada para y por los niños, para que se diviertan y recuerden su infancia para siempre.</p>
+				<p>Somos una empresa creada para y por los niños, nuestro objetivo es que recuerden su infancia para siempre.</p>
 			</div>
 
 			<div class="col-md-4 col-sm-6 ">
@@ -33,8 +33,8 @@ export default function Footer(){
 			<div class="col-md-3  col-sm-12">
 				<h4>Contacto</h4>
 				<div class="text-widget">
-					<span>9 de julio, quilmes. Buenos aires.</span> <br/>
-					Phone: <span><a href="tel:42579699">42579699 </a></span><br/>
+					<span>9 de Julio 266, Quilmes, Buenos Aires.</span> <br/>
+					Phone: <span><a href="tel:42579699">(011) 4257-9699 </a></span><br/>
 					E-Mail:<span> <a href="mailto:toyworld@gmail.com">toyworld@gmail.com</a> </span><br/>
 				</div>
 
@@ -50,7 +50,7 @@ export default function Footer(){
 		{/* <!-- Copyright --> */}
 		<div class="row">
 			<div class="col-md-12">
-				<div class="copyrights">© 2020 toyWorld.</div>
+				<div class="copyrights">© 2021 toyWorld.</div>
 			</div>
 		</div>
 

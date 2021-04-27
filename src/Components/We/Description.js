@@ -6,16 +6,16 @@ export default function Description () {
 	<div class="row">
 		<div class="col-md-12">
 			<p>
-				Somos una jugueteria que fue fundada en 2021. Su directores actuales, Bellisario Agustina y Di maria Alan.
+				Somos una jugueteria que fue fundada en 2021. Su directores actuales son Bellisario Agustina y Di Maria Alan.
 			</p>
 			<p>
-				Nos queremos consolidar como una de las principales juegueterias de Argentina.  Ofrecemos un servicio personalizado, completamente sinérgico, que hará que sus deseaos sean cumplidos y que obtenga la relacion calidad-precio deseada.
+				Ofrecemos un servicio personalizado, completamente sinérgico, que hará que sus deseos sean cumplidos.
 			</p>
 			<p>
-				Si desea contactarnos, estamos de lunes a viernes de 9hs a 18hs.
+				En ToyWorld lo mas importante son las personas, nuestro equipo, nuestros clientes y la atención personalizada que tenemos con cada uno lo cual nos hace mejorar cada día.
 			</p>
 			<p>
-				En ToyWorld, lo mas importante son las personas, nuestro equipo, nuestros clientes y la atención personalizada que tenemos con cada uno lo cual nos hace mejorar cada día.
+				Horario de atencion: Lunes a viernes de 9hs a 18hs.
 			</p>
 		</div>
 	</div>

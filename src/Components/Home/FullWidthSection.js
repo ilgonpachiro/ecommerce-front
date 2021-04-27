@@ -23,7 +23,7 @@ export default function FullWidthSection () {
 					</div>
 
 					<h3>SUCURSALES</h3>
-					<p>Tenemos todas nuestras sucursales habilitadas y siguiendo el protocolo de covid.</p>
+					<p>¡Podes acercarte a nuestras sucursales cuando quieras para ver nuestros productos!</p>
 				</div>
 			</div>
 
@@ -40,7 +40,7 @@ export default function FullWidthSection () {
 					</div>
 
 					<h3>ENVIOS</h3>
-					<p>Envios caba y zona GBA EXPRESS.</p>
+					<p>Envios CABA y GBA EXPRESS.</p>
 				</div>
 			</div>
 
@@ -57,7 +57,7 @@ export default function FullWidthSection () {
 					</div>
 
 					<h3>CUOTAS</h3>
-					<p>6 cuotas sin interes.</p>
+					<p>Contamos con financiacion VISA (Hasta 6 cuotas)</p>
 				</div>
 			</div>
 
@@ -73,7 +73,7 @@ export default function FullWidthSection () {
 					</div>
 
 					<h3>GARANTÍA</h3>
-					<p>1 año de garantia por cada producto.</p>
+					<p>Te ofrecemos una devolucion gratuita si el producto no cumple con tus expectativas</p>
 				</div>
 			</div>
 

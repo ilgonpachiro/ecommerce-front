@@ -9,7 +9,7 @@ export default function Header(){
 			<div class="left-side">
 
 				<ul class="top-bar-menu">
-					<li><i class="fa fa-phone"></i><a href="tel:42579699"> 42579699 </a></li>
+					<li><i class="fa fa-phone"></i><a href="tel:42579699">(011) 4257-9699 </a></li>
 					<li><i class="fa fa-envelope"></i> <a href="toyworld@gmail.com">toyworld@gmail.com</a></li>
 				</ul>
 
