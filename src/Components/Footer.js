@@ -1,5 +1,5 @@
 import React from 'react';
-import LOGO from '../images/toyworld.jpeg'
+import LOGO from '../images/toyworld.png'
 
 export default function Footer(){
     return (

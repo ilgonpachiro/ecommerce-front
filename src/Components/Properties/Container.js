@@ -2,20 +2,110 @@ import React from 'react';
 import LISTING01 from '../../images/listing-01.jpg'
 
 const toys = [{
-	name: 'test',
-	img: '../../images/listing-01.jpg',
+	name: 'Among Us',
+	img: '../../images/among1.wepb',
 	id: '1',
-	price: '420'
+	price: '1872',
+	category: 'Funko',
+	brand: 'Fun'
 },{
-	name: 'test',
-	img: '../../images/listing-01.jpg',
-	id: '1',
-	price: '420'
+	name: 'Muñeca Heroina',
+	img: '../../images/muñeca1.jpg',
+	id: '2',
+	price: '5980',
+	category: 'Niña',
+	brand: 'Super Baby'
 },{
-	name: 'test',
-	img: '../../images/listing-01.jpg',
-	id: '1',
-	price: '420'
+	name: 'Bebe Unicornio',
+	img: '../../images/bebe1.jpg',
+	id: '3',
+	price: '7200',
+	category: 'Niña',
+	brand: 'Cry Babies'
+},{
+	name: 'Fluffly',
+	img: '../../images/fur1.jpg',
+	id: '4',
+	price: '4998',
+	category: 'Niño',
+	brand: 'Scruff'
+},{
+	name: 'Llama Interactiva',
+	img: '../../images/llama1.jpg',
+	id: '5',
+	price: '4590',
+	category: 'Niño',
+	brand: 'Zuru'
+},{
+	name: 'Barbie',
+	img: '../../images/barbie1.jpg',
+	id: '6',
+	price: '10990',
+	category: 'Niña',
+	brand: 'Barbie'
+},{
+	name: 'Pokebola',
+	img: '../../images/pokemon1.jpg',
+	id: '7',
+	price: '399',
+	category: 'Pokemon',
+	brand: 'Pokemon'
+},{
+	name: 'Pelotero Bebe',
+	img: '../../images/pelotero1.jpg',
+	id: '8',
+	price: '2100',
+	category: 'Bebe',
+	brand: 'Toy World'
+},{
+	name: 'Camioneta Bateria',
+	img: '../../images/camioneta1.jpg',
+	id: '9',
+	price: '84999',
+	category: 'Niño',
+	brand: 'Toy World'
+},{
+	name: 'Baby Yoda',
+	img: '../../images/yoda1.jpg',
+	id: '10',
+	price: '7200',
+	category: 'Niño',
+	brand: 'Star Wars'
+},{
+	name: 'Critter',
+	img: '../../images/glitter1.jpg',
+	id: '11',
+	price: '7200',
+	category: 'Niña',
+	brand: 'Cry Babies'
+},{
+	name: 'Heladera Barbie',
+	img: '../../images/heladra1.jpg',
+	id: '12',
+	price: '7969',
+	category: 'Niña',
+	brand: 'Barbie'
+},{
+	name: 'Fingerlings',
+	img: '../../images/dragon1.jpg',
+	id: '13',
+	price: '5091',
+	category: 'Niño',
+	brand: 'Fingerlings'
+},{
+	name: 'Fisher Interactivo',
+	img: '../../images/fisher1.jpg',
+	id: '14',
+	price: '18500',
+	category: 'Niño',
+	brand: 'Fisher Price'
+},{
+	name: 'Muñeca Pinypon',
+	img: '../../images/nena1.jpg',
+	id: '15',
+	price: '1400',
+	category: 'Niña',
+	brand: 'Pinypon'
 }];
 
 const listItems=toys.map((toy)=>{
