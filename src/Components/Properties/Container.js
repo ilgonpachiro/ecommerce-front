@@ -3,14 +3,14 @@ import LISTING01 from '../../images/listing-01.jpg'
 
 const toys = [{
 	name: 'Among Us',
-	img: '../../images/among1.webp',
+	img: '/images/among1.webp',
 	id: '1',
 	price: '1872',
 	category: 'Funko',
 	brand: 'Fun'
 },{
 	name: 'Muñeca Heroina',
-	img: '../../images/muñeca1.webp',
+	img: '../../images/muñeca1.jpg',
 	id: '2',
 	price: '5980',
 	category: 'Niña',
@@ -124,7 +124,7 @@ const listItems=toys.map((toy)=>{
 		</div>
 
 		<div class="listing-carousel">
-			<div><img src={toy.price}alt=""/></div>
+			<div><img src={toy.img}alt=""/></div>
 			<div><img src={toy.price}alt=""/></div>
 			<div><img src={toy.price}alt=""/></div>
 		</div>
