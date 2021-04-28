@@ -149,8 +149,7 @@ const listItems=toys.map((toy)=>{
 		</ul>
 
 		<div class="listing-footer">
-			<a href="#"><i class="fa fa-user"></i> David Strozier</a>
-			<span><i class="fa fa-calendar-o"></i> 1 day ago</span>
+			<span><i class="fa fa-calendar-o"></i> En Stock</span>
 		</div>
 
 	</div>

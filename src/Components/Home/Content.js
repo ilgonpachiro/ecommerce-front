@@ -104,7 +104,7 @@ export default function Content () {
 							<ul class="listing-features">
 								<li>Marca <span>Hasbro</span></li>
 								<li>Dimensiones <span>25cm x 22cm x 12cm</span></li>
-								<li>Material<span>Plastico.</span></li>
+								<li>Material<span>Plastico</span></li>
 							</ul>
 
 							{/* <div class="listing-footer">
@@ -257,7 +257,7 @@ export default function Content () {
 							<ul class="listing-features">
 								<li>Marca <span>Disney</span></li>
 								<li>Dimensiones <span> 40cm x 8cm x 8cm</span></li>
-								<li>Material <span>Plastico.</span></li>
+								<li>Material <span>Plastico</span></li>
 							</ul>
 
 							{/* <div class="listing-footer">
