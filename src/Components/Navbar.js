@@ -53,11 +53,7 @@ export default function Navbar(){
 
 			<div class="right-side">
 				<div class="header-widget">
-					<a href="#" class="button border">Logueate</a>
-					{/* <Button type="button" className="btn btn-default" onClick={this.open}>
-         			 Login
-        			</Button>
-       			 <LoginForm showModal={this.state.showModal} onClose = {this.close} /> */}
+					<a class="button border"><Link to = "/signIn">Login</Link></a>
 				</div>
 			</div>
 

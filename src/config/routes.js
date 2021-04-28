@@ -11,6 +11,7 @@ import We from '../Components/We'
 import Carrito from '../Components/carrito'
 import Properties from '../Components/Properties'
 import PropertySingle from '../Components/PropertySingle'
+import LogIn from '../Components/SignIn'
 
 
 const Routing = () => {
@@ -40,6 +41,7 @@ const Main = () => {
    <Route path = '/carrito' component={Carrito}/>
    <Route path = '/we' component={We}/>
    <Route path = '/properties' component={Properties}/>
+   <Route path = '/signIn' component={LogIn}/>
    <Route path = '/property-single' component={PropertySingle}/>
     </div>
     </Router> 
