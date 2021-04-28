@@ -3,105 +3,105 @@ import LISTING01 from '../../images/listing-01.jpg'
 
 const toys = [{
 	name: 'Among Us',
-	img: '../../images/among1.wepb',
+	img: '../../images/among1.webp',
 	id: '1',
 	price: '1872',
 	category: 'Funko',
 	brand: 'Fun'
 },{
 	name: 'Muñeca Heroina',
-	img: '../../images/muñeca1.jpg',
+	img: '../../images/muñeca1.webp',
 	id: '2',
 	price: '5980',
 	category: 'Niña',
 	brand: 'Super Baby'
 },{
 	name: 'Bebe Unicornio',
-	img: '../../images/bebe1.jpg',
+	img: '../../images/bebe1.webp',
 	id: '3',
 	price: '7200',
 	category: 'Niña',
 	brand: 'Cry Babies'
 },{
 	name: 'Fluffly',
-	img: '../../images/fur1.jpg',
+	img: '../../images/fur1.webp',
 	id: '4',
 	price: '4998',
 	category: 'Niño',
 	brand: 'Scruff'
 },{
 	name: 'Llama Interactiva',
-	img: '../../images/llama1.jpg',
+	img: '../../images/llama1.webp',
 	id: '5',
 	price: '4590',
 	category: 'Niño',
 	brand: 'Zuru'
 },{
 	name: 'Barbie',
-	img: '../../images/barbie1.jpg',
+	img: '../../images/barbie1.webp',
 	id: '6',
 	price: '10990',
 	category: 'Niña',
 	brand: 'Barbie'
 },{
 	name: 'Pokebola',
-	img: '../../images/pokemon1.jpg',
+	img: '../../images/pokemon1.webp',
 	id: '7',
 	price: '399',
 	category: 'Pokemon',
 	brand: 'Pokemon'
 },{
 	name: 'Pelotero Bebe',
-	img: '../../images/pelotero1.jpg',
+	img: '../../images/pelotero1.webp',
 	id: '8',
 	price: '2100',
 	category: 'Bebe',
 	brand: 'Toy World'
 },{
 	name: 'Camioneta Bateria',
-	img: '../../images/camioneta1.jpg',
+	img: '../../images/camioneta1.webp',
 	id: '9',
 	price: '84999',
 	category: 'Niño',
 	brand: 'Toy World'
 },{
 	name: 'Baby Yoda',
-	img: '../../images/yoda1.jpg',
+	img: '../../images/yoda1.webp',
 	id: '10',
 	price: '7200',
 	category: 'Niño',
 	brand: 'Star Wars'
 },{
 	name: 'Critter',
-	img: '../../images/glitter1.jpg',
+	img: '../../images/glitter1.webp',
 	id: '11',
 	price: '7200',
 	category: 'Niña',
 	brand: 'Cry Babies'
 },{
 	name: 'Heladera Barbie',
-	img: '../../images/heladra1.jpg',
+	img: '../../images/heladra1.webp',
 	id: '12',
 	price: '7969',
 	category: 'Niña',
 	brand: 'Barbie'
 },{
 	name: 'Fingerlings',
-	img: '../../images/dragon1.jpg',
+	img: '../../images/dragon1.webp',
 	id: '13',
 	price: '5091',
 	category: 'Niño',
 	brand: 'Fingerlings'
 },{
 	name: 'Fisher Interactivo',
-	img: '../../images/fisher1.jpg',
+	img: '../../images/fisher1.webp',
 	id: '14',
 	price: '18500',
 	category: 'Niño',
 	brand: 'Fisher Price'
 },{
 	name: 'Muñeca Pinypon',
-	img: '../../images/nena1.jpg',
+	img: '../../images/nena1.webp',
 	id: '15',
 	price: '1400',
 	category: 'Niña',
@@ -134,10 +134,9 @@ const listItems=toys.map((toy)=>{
 
 		<div class="listing-title">
 			<h4><a href="single-property-page-1.html">{toy.name}</a></h4>
-			<a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps">
-				<i class="fa fa-map-marker"></i>
-				9364 School St. Lynchburg, NY
-			</a>
+			
+				
+			
 
 			<a href="single-property-page-1.html" class="details button border">Details</a>
 		</div>

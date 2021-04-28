@@ -26,7 +26,7 @@ export default function Slider (props) {
 				<div class="item"><img src={SINGLE_PROPERTY_01} alt=""/></div>
 				<div class="item"><img src={SINGLE_PROPERTY_01} alt=""/></div>
 			</div>
-
+ 
 		</div>
 	</div>
 </div>
