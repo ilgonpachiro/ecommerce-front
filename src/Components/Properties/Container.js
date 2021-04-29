@@ -134,7 +134,7 @@ const listItems=toys.map((toy)=>{
 		</div>
 
 		<div class="listing-carousel">
-			<div><img src={toy.img}alt=""/></div>
+			<div style={{textAlign: 'center'}}><img style={{width: '100%', height:'auto', maxWidth:"200px", margin:"auto 0px"}} src={toy.img}alt=""/></div>
 			<div><img src={toy.img}alt=""/></div>
 			<div><img src={toy.img}alt=""/></div>
 		</div>
