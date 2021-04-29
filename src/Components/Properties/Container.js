@@ -126,7 +126,7 @@ const toys = [{
 
 const listItems=toys.map((toy)=>{
     return 	<div class="listing-item" key={toy.id}>
-	<a href="single-property-page-1.html" class="listing-img-container">
+	<a  class="listing-img-container">
 
 		
 		<div class="listing-img-content">
@@ -143,12 +143,12 @@ const listItems=toys.map((toy)=>{
 	<div class="listing-content">
 
 		<div class="listing-title">
-			<h4><a href="single-property-page-1.html">{toy.name}</a></h4>
+			<h4><a >{toy.name}</a></h4>
 			
 				
 			
 
-			<a href="single-property-page-1.html" class="details button border">Details</a>
+			<a  class="details button border">Details</a>
 		</div>
 
 		<ul class="listing-details">
@@ -204,24 +204,6 @@ export default function Container() {
 
 			<div class="clearfix"></div>
 			{/* <!-- Pagination --> */}
-			<div class="pagination-container margin-top-20">
-				<nav class="pagination">
-					<ul>
-						<li><a href="#" class="current-page">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li class="blank">...</li>
-						<li><a href="#">22</a></li>
-					</ul>
-				</nav>
-
-				<nav class="pagination-next-prev">
-					<ul>
-						<li><a href="#" class="prev">Previous</a></li>
-						<li><a href="#" class="next">Next</a></li>
-					</ul>
-				</nav>
-			</div>
 			{/* <!-- Pagination / End --> */}
 
 		</div>
