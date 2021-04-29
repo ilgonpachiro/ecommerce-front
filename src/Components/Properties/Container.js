@@ -7,126 +7,136 @@ const toys = [{
 	id: '1',
 	price: '1872',
 	category: 'Funko',
-	brand: 'Fun'
+	brand: 'Fun',
+	origin: 'Argentina'
 },{
 	name: 'Muñeca Heroina',
 	img: '../../images/muñeca1.jpg',
 	id: '2',
 	price: '5980',
 	category: 'Niña',
-	brand: 'Super Baby'
+	brand: 'Super Baby',
+	origin: 'Argentina'
 },{
 	name: 'Bebe Unicornio',
 	img: '../../images/bebe1.webp',
 	id: '3',
 	price: '7200',
 	category: 'Niña',
-	brand: 'Cry Babies'
+	brand: 'Cry Babies',
+	origin: 'Argentina'
+
 },{
 	name: 'Fluffly',
 	img: '../../images/fur1.webp',
 	id: '4',
 	price: '4998',
 	category: 'Niño',
-	brand: 'Scruff'
+	brand: 'Scruff',
+	origin: 'Argentina'
 },{
 	name: 'Llama Interactiva',
 	img: '../../images/llama1.webp',
 	id: '5',
 	price: '4590',
 	category: 'Niño',
-	brand: 'Zuru'
+	brand: 'Zuru',
+	origin: 'Argentina'
 },{
 	name: 'Barbie',
 	img: '../../images/barbie1.webp',
 	id: '6',
 	price: '10990',
 	category: 'Niña',
-	brand: 'Barbie'
+	brand: 'Barbie',
+	origin: 'Argentina'
 },{
 	name: 'Pokebola',
 	img: '../../images/pokemon1.webp',
 	id: '7',
 	price: '399',
 	category: 'Pokemon',
-	brand: 'Pokemon'
+	brand: 'Pokemon',
+	origin: 'Argentina'
 },{
 	name: 'Pelotero Bebe',
 	img: '../../images/pelotero1.webp',
 	id: '8',
 	price: '2100',
 	category: 'Bebe',
-	brand: 'Toy World'
+	brand: 'Toy World',
+	origin: 'Argentina'
 },{
 	name: 'Camioneta Bateria',
 	img: '../../images/camioneta1.webp',
 	id: '9',
 	price: '84999',
 	category: 'Niño',
-	brand: 'Toy World'
+	brand: 'Toy World',
+	origin: 'Argentina'
 },{
 	name: 'Baby Yoda',
 	img: '../../images/yoda1.webp',
 	id: '10',
 	price: '7200',
 	category: 'Niño',
-	brand: 'Star Wars'
+	brand: 'Star Wars',
+	origin: 'Argentina'
 },{
 	name: 'Critter',
 	img: '../../images/glitter1.webp',
 	id: '11',
 	price: '7200',
 	category: 'Niña',
-	brand: 'Cry Babies'
+	brand: 'Cry Babies',
+	origin: 'Argentina'
 },{
 	name: 'Heladera Barbie',
 	img: '../../images/heladra1.webp',
 	id: '12',
 	price: '7969',
 	category: 'Niña',
-	brand: 'Barbie'
+	brand: 'Barbie',
+	origin: 'Argentina'
 },{
 	name: 'Fingerlings',
 	img: '../../images/dragon1.webp',
 	id: '13',
 	price: '5091',
 	category: 'Niño',
-	brand: 'Fingerlings'
+	brand: 'Fingerlings',
+	origin: 'Argentina'
 },{
 	name: 'Fisher Interactivo',
 	img: '../../images/fisher1.webp',
 	id: '14',
 	price: '18500',
 	category: 'Niño',
-	brand: 'Fisher Price'
+	brand: 'Fisher Price',
+	origin: 'Argentina'
 },{
 	name: 'Muñeca Pinypon',
 	img: '../../images/nena1.webp',
 	id: '15',
 	price: '1400',
 	category: 'Niña',
-	brand: 'Pinypon'
+	brand: 'Pinypon',
+	origin: 'Argentina'
 }];
 
 const listItems=toys.map((toy)=>{
     return 	<div class="listing-item" key={toy.id}>
 	<a href="single-property-page-1.html" class="listing-img-container">
 
-		<div class="listing-badges">
-			<span class="featured">Featured</span>
-			<span>For Sale</span>
-		</div>
-
+		
 		<div class="listing-img-content">
-			<span class="listing-price">{toy.price}</span>
-			<span class="like-icon with-tip" data-tip-content="Add to Bookmarks"></span>
-			<span class="compare-button with-tip" data-tip-content="Add to Compare"></span>
+			<span class="listing-price">$ {toy.price}</span>
 		</div>
 
 		<div class="listing-carousel">
 			<div><img src={toy.img}alt=""/></div>
-			<div><img src={toy.price}alt=""/></div>
-			<div><img src={toy.price}alt=""/></div>
+			<div><img src={toy.img}alt=""/></div>
+			<div><img src={toy.img}alt=""/></div>
 		</div>
 	</a>
 
@@ -142,10 +152,9 @@ const listItems=toys.map((toy)=>{
 		</div>
 
 		<ul class="listing-details">
-			<li>530 sq ft</li>
-			<li>1 Bedroom</li>
-			<li>3 Rooms</li>
-			<li>1 Bathroom</li>
+			<li>Categoria: {toy.category}</li>
+			<li>Marca: {toy.brand}</li>
+			<li>Hecho en: {toy.origin}</li>
 		</ul>
 
 		<div class="listing-footer">
@@ -181,14 +190,6 @@ export default function Container() {
 					</div>
 				</div>
 
-				<div class="col-md-6">
-					{/* <!-- Layout Switcher -->? */}
-					<div class="layout-switcher">
-						<a href="#" class="list"><i class="fa fa-th-list"></i></a>
-						<a href="#" class="grid"><i class="fa fa-th-large"></i></a>
-						<a href="#" class="grid-three"><i class="fa fa-th"></i></a>
-					</div>
-				</div>
 			</div>
 
 
