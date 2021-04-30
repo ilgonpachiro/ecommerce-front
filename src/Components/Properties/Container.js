@@ -124,6 +124,17 @@ const toys = [{
 	origin: 'Argentina'
 }];
 
+const uniqueBrands = [];
+toys.map(toy => {
+    if (uniqueBrands.indexOf(toy.brand) === -1) {
+        uniqueBrands.push(toy.brand)
+    }
+});
+
+const listBrand= uniqueBrands.map((toy)=>{
+    return <option key={toy} >{toy} </option>
+})
+
 const listItems=toys.map((toy)=>{
     return 	<div class="listing-item" key={toy.id}>
 	<a  class="listing-img-container">
@@ -164,7 +175,11 @@ const listItems=toys.map((toy)=>{
 	</div>
 
 </div>
+
+
+
   })
+
 
 export default function Container() {
     return (
@@ -174,17 +189,30 @@ export default function Container() {
 		<div class="col-md-12">
 
 			{/* <!-- Sorting / Layout Switcher --> */}
-			<div class="row margin-bottom-15">
+			<div class="row margin-bottom-15 margin-top-30">
 
-				<div class="col-md-6">
+				<div class="col-md-3">
 					{/* <!-- Sort by --> */}
 					<div class="sort-by">
 						<label>Ordenar por:</label>
 
 						<div class="sort-by-select">
 							<select data-placeholder="Default order" class="chosen-select-no-single" >
-								<option>Menor precio</option>
-								<option>Mayor precio</option>
+								<option value="lower">Menor precio</option>
+								<option value="higher">Mayor precio</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					{/* <!-- Sort by --> */}
+					<div class="sort-by">
+						<label>Filtrar por:</label>
+
+						<div class="sort-by-select">
+							<select data-placeholder="Default order" class="chosen-select-no-single" >
+								{listBrand}
 							</select>
 						</div>
 					</div>
