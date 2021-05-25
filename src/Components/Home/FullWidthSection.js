@@ -3,38 +3,38 @@ import React from 'react'
 
 export default function FullWidthSection () {
     return (
-        <section class="fullwidth margin-top-105" data-background-color="#6943c3">
+        <section className="fullwidth margin-top-105" data-background-color="#6943c3">
 
-	<h3 class="headline-box">¿Qué estás buscando?</h3>
+	<h3 className="headline-box">¿Qué estás buscando?</h3>
 
-	<div class="container">
-		<div class="row">
+	<div className="container">
+		<div clasName="row">
 
 			<div class="col-md-3 col-sm-6">
 
-				<div class="icon-box-1">
+				<div className="icon-box-1">
 
-					<div class="icon-container">
-						<i class="im im-icon-Office"></i>
-						<div class="icon-links">
-							<a href="listings-grid-standard-with-sidebar.html">Venta</a>
+					<div className="icon-container">
+						<i className="im im-icon-Office"></i>
+						<div className="icon-links">
+							{/* <a href="listings-grid-standard-with-sidebar.html">Venta</a> */}
 							
 						</div>
 					</div>
 
-					<h3>SUCURSALES</h3>
-					<p>¡Podes acercarte a nuestras sucursales cuando quieras para ver nuestros productos!</p>
+					<h3>SUCURSAL</h3>
+					<p>¡Podes acercarte a nuestra sucursal cuando quieras para ver nuestros productos!</p>
 				</div>
 			</div>
 
-			<div class="col-md-3 col-sm-6">
+			<div className="col-md-3 col-sm-6">
 
-				<div class="icon-box-1">
+				<div className="icon-box-1">
 
-					<div class="icon-container">
-						<i class="im im-icon-Home-2"></i>
-						<div class="icon-links">
-							<a href="listings-grid-standard-with-sidebar.html">Ver</a>
+					<div className="icon-container">
+						<i className="im im-icon-Car-3"></i>
+						<div className="icon-links">
+							{/* <a href="listings-grid-standard-with-sidebar.html">Ver</a> */}
 							
 						</div>
 					</div>
@@ -44,14 +44,14 @@ export default function FullWidthSection () {
 				</div>
 			</div>
 
-			<div class="col-md-3 col-sm-6">
+			<div className="col-md-3 col-sm-6">
 
-				<div class="icon-box-1">
+				<div className="icon-box-1">
 
-					<div class="icon-container">
-						<i class="im im-icon-Car-3"></i>
-						<div class="icon-links">
-							<a href="listings-grid-standard-with-sidebar.html">Ver</a>
+					<div className="icon-container">
+						<i className="im im-icon-Dollar"></i>
+						<div className="icon-links">
+							{/* <a href="listings-grid-standard-with-sidebar.html">Ver</a> */}
 							
 						</div>
 					</div>
@@ -61,13 +61,13 @@ export default function FullWidthSection () {
 				</div>
 			</div>
 
-			<div class="col-md-3 col-sm-6">
-				<div class="icon-box-1">
+			<div className="col-md-3 col-sm-6">
+				<div className="icon-box-1">
 
-					<div class="icon-container">
-						<i class="im im-icon-Clothing-Store"></i>
-						<div class="icon-links">
-							<a href="listings-grid-standard-with-sidebar.html">Ver</a>
+					<div className="icon-container">
+						<i className="im im-icon-Clothing-Store"></i>
+						<div className="icon-links">
+							{/* <a href="listings-grid-standard-with-sidebar.html">Ver</a> */}
 							
 						</div>
 					</div>

@@ -2,22 +2,21 @@ import React, { Component } from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
-import Body from '../Body';
+import Container from './Container';
 
 
-
-
-class PropertySingle extends Component {
+class Admin extends Component {
   render() {
     return (
       <div>
           <Header/>
           <Navbar/>
-          <Body/>
+          
+          <Container/>
           <Footer/>
       </div>
     );
   }
 }
 
-export default PropertySingle;
+export default Admin;

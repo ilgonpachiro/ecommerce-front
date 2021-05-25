@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
-import Search from './Search';
 import Container from './Container';
 
-class Properties extends Component {
+class Productos extends Component {
   render() {
     return (
       <div>
@@ -19,4 +18,4 @@ class Properties extends Component {
   }
 }
 
-export default Properties;
+export default Productos;

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -11,6 +12,9 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+
+import { useHistory } from "react-router-dom";
+
 
 function Copyright() {
   return (
@@ -47,6 +51,13 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignIn() {
   const classes = useStyles();
+
+  const history = useHistory();
+
+  const routeChange = () =>{ 
+    let path = `newPath`; 
+    history.push(path);
+  }
 
   return (
     <Container component="main" maxWidth="xs">
@@ -85,11 +96,14 @@ export default function SignIn() {
             label="Remember me"
           />
           <Button
+        
             type="submit"
             fullWidth
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={routeChange}
+            
           >
             Sign In
           </Button>

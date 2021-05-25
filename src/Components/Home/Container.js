@@ -1,10 +1,10 @@
 import React from 'react';
-import IMG1 from '../../images/logo.png'
+// import IMG1 from '../../images/logo.png'
 
 export default function Container() {
     return(
-        <div class="container">
-	<div class="row">
+        <div className="container">
+	<div className="row">
 
 		{/* <div class="col-md-12"> 
 			<h3 class="headline centered margin-bottom-35 margin-top-10">Colonias mas buscadas <span>Encuentra propiedades en las mejores zonas.</span></h3>

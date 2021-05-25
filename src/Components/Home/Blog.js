@@ -1,7 +1,7 @@
 import React from 'react';
-import BLOG_POST_01 from '../../images/blog-post-01.jpg'
-import BLOG_POST_02 from '../../images/blog-post-02.jpg'
-import BLOG_POST_03 from '../../images/blog-post-03.jpg'
+// import BLOG_POST_01 from '../../images/blog-post-01.jpg'
+// import BLOG_POST_02 from '../../images/blog-post-02.jpg'
+// import BLOG_POST_03 from '../../images/blog-post-03.jpg'
 
 
 export default function Blog() {

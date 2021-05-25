@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MapContainer () {
     return (
-        <div class="contact-map margin-bottom-55">
+        <div className="contact-map margin-bottom-55">
 
 
 	{/* <div class="google-map-container">

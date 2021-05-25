@@ -26,7 +26,7 @@ menu,
 nav,
 section,
 summary {
-  display: block;
+  display: inline-block;
 }
 audio,
 canvas,
@@ -313,7 +313,7 @@ img {
   vertical-align: middle;
 }
 .img-responsive {
-  display: block;
+  display: inline-block;
   max-width: 100%;
   height: auto;
 }

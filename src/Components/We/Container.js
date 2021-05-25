@@ -1,8 +1,6 @@
 import React from 'react';
 import AGENT01 from '../../images/agus.jpeg'
 import AGENT02 from '../../images/alan.jpeg'
-import AGENT03 from '../../images/agent-03.jpg'
-import AGENT04 from '../../images/agent-04.jpg'
 
 
 export default function Container () {
@@ -23,7 +21,7 @@ export default function Container () {
 							<div class="agent-avatar">
 								<a href="agent-page.html">
 									<img src={AGENT01} alt=""/>
-									<span class="view-profile-btn">Ver Perfil</span>
+									{/* <span class="view-profile-btn">Ver Perfil</span> */}
 								</a>
 							</div>
 
@@ -38,10 +36,10 @@ export default function Container () {
 								</ul>
 
 								<ul class="social-icons">
-									<li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
-									<li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
+									<li><a class="facebook" href="https://www.facebook.com/tinita.bellisario/"><i class="icon-facebook"></i></a></li>
+									<li><a class="twitter" href="https://twitter.com/agusbellisario"><i class="icon-twitter"></i></a></li>
 									<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
-									<li><a class="linkedin" href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a class="linkedin" href="https://ar.linkedin.com/in/agustinabellisario"><i class="icon-linkedin"></i></a></li>
 								</ul>
 								<div class="clearfix"></div>
 							</div>
@@ -58,18 +56,18 @@ export default function Container () {
 							<div class="agent-avatar">
 								<a href="agent-page.html">
 									<img src={AGENT02} alt=""/>
-									<span class="view-profile-btn">Ver Perfil</span>
+									{/* <span class="view-profile-btn">Ver Perfil</span> */}
 								</a>
 							</div>
 
 							<div class="agent-content">
 								<div class="agent-name">
-									<h4><a href="agent-page.html">Di maria, Alan</a></h4>
+									<h4><a href="agent-page.html">Alan Di Maria</a></h4>
 								</div>
 
 								<ul class="agent-contact-details">
-									<li><i class="sl sl-icon-call-in"></i> 5511 5555</li>
-									<li><i class="fa fa-envelope-o "></i><a href="#">alandimaria@gmail.com</a></li>
+									<li><i class="sl sl-icon-call-in"></i> 42100115</li>
+									<li><i class="fa fa-envelope-o "></i><a href="#">adimaria@gmail.com</a></li>
 								</ul>
 
 								<ul class="social-icons">
