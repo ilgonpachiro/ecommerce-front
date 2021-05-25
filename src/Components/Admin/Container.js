@@ -15,25 +15,142 @@ function App() {
       brand: 'Fun',
       origin: 'USA',
       cantidadAux: 0
-    },
-
-    {
+    }, {
       id: 2,
-      name: 'Test',
-      img: '/images/among1.webp',
-      price: 999,
-      category: 'Funko',
-      brand: 'Fun',
+      name: 'Muñeca Heroina',
+      img: '../../images/muñeca1.jpg',
+      price: 5980,
+      category: 'Niña',
+      brand: 'Super Baby',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 3,
+      name: 'Bebe Unicornio',
+      img: '../../images/bebe1.webp',
+      price: 7200,
+      category: 'Niña',
+      brand: 'Cry Babies',
+      origin: 'USA',
+      cantidadAux: 0
+    
+    }, {
+      id: 4,
+      name: 'Fluffly',
+      img: '../../images/fur1.webp',
+      price: 4998,
+      category: 'Niño',
+      brand: 'Scruff',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 5,
+      name: 'Llama Interactiva',
+      img: '../../images/llama1.webp',
+      price: 4590,
+      category: 'Niño',
+      brand: 'Zuru',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 6,
+      name: 'Barbie',
+      img: '../../images/barbie1.webp',
+      price: 1090,
+      category: 'Niña',
+      brand: 'Barbie',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 7,
+      name: 'Pokebola',
+      img: '../../images/pokemon1.webp',
+      price: 399,
+      category: 'Pokemon',
+      brand: 'Pokemon',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 8,
+      name: 'Pelotero Bebe',
+      img: '../../images/pelotero1.webp',
+      price: 2100,
+      category: 'Bebe',
+      brand: 'Toy World',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 9,
+      name: 'Camioneta Bateria',
+      img: '../../images/camioneta1.webp',
+      price: 84999,
+      category: 'Niño',
+      brand: 'Toy World',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 10,
+      name: 'Baby Yoda',
+      img: '../../images/yoda1.webp',
+      price: 7200,
+      category: 'Niño',
+      brand: 'Star Wars',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 11,
+      name: 'Critter',
+      img: '../../images/glitter1.webp',
+      price: 7200,
+      category: 'Niña',
+      brand: 'Cry Babies',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 12,
+      name: 'Heladera Barbie',
+      img: '../../images/heladra1.webp',
+      price: 7969,
+      category: 'Niña',
+      brand: 'Barbie',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 13,
+      name: 'Fingerlings',
+      img: '../../images/dragon1.webp',
+      price: 5091,
+      category: 'Niño',
+      brand: 'Fingerlings',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 14,
+      name: 'Fisher Interactivo',
+      img: '../../images/fisher1.webp',
+      price: 18500,
+      category: 'Niño',
+      brand: 'Fisher Price',
+      origin: 'USA',
+      cantidadAux: 0
+    }, {
+      id: 15,
+      name: 'Muñeca Pinypon',
+      img: '../../images/nena1.webp',
+      price: 1400,
+      category: 'Niña',
+      brand: 'Pinypon',
       origin: 'USA',
       cantidadAux: 0
     }
-  
   ];
 
   const [data, setData] = useState(dataJuguetes);
   const [modalEditar, setModalEditar] = useState(false);
   const [modalEliminar, setModalEliminar] = useState(false);
   const [modalInsertar, setModalInsertar] = useState(false);
+
+  const listadoCompra = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
 
  
@@ -140,32 +257,27 @@ setJuguetesSeleccionado(elemento);
       </table>
 
       <h3>Listado de pedidos</h3>
-
-
-
       <table className="table table-bordered">
-
-
         <thead>
           <tr>
-            <th>Apellido</th>
-            <th>Nombre</th>
-            <th>Total</th>
-          
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Brand</th>          
           </tr>
         </thead>
         <tbody>
-          {data.map(elemento=>(
+          {listadoCompra.map(toy=>(
             <tr>
-              <td>{elemento.lastname}</td>
-              <td>{elemento.surname}</td>
-              <td>{elemento.total}</td>
+              <td>{toy.info.name}</td>
+              <td>{toy.cantidad}</td>
+              <td>{toy.price}</td>
+              <td>{toy.brand}</td>
             </tr>
           ))
           }
         </tbody>
       </table>
-
 
       <Modal isOpen={modalEditar}>
         <ModalHeader>
@@ -189,7 +301,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="nombre"
+              name="name"
               value={jugueteSeleccionado && jugueteSeleccionado.name}
               onChange={handleChange}
             />
@@ -199,7 +311,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="minutos"
+              name="price"
               value={jugueteSeleccionado && jugueteSeleccionado.price}
               onChange={handleChange}
             />
@@ -208,7 +320,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="minutos"
+              name="category"
               value={jugueteSeleccionado && jugueteSeleccionado.category}
               onChange={handleChange}
             />
@@ -217,7 +329,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="minutos"
+              name="brand"
               value={jugueteSeleccionado && jugueteSeleccionado.brand}
               onChange={handleChange}
             />
@@ -226,7 +338,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="minutos"
+              name="origin"
               value={jugueteSeleccionado && jugueteSeleccionado.origin}
               onChange={handleChange}
             />
@@ -235,7 +347,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="minutos"
+              name="cantidadAux"
               value={jugueteSeleccionado && jugueteSeleccionado.cantidadAux}
               onChange={handleChange}
             />
@@ -298,7 +410,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="nombre"
+              name="name"
               value={jugueteSeleccionado ? jugueteSeleccionado.name: ''}
               onChange={handleChange}
             />
@@ -308,7 +420,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="minutos"
+              name="price"
               value={jugueteSeleccionado ? jugueteSeleccionado.price: ''}
               onChange={handleChange}
             />
@@ -318,7 +430,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="minutos"
+              name="category"
               value={jugueteSeleccionado ? jugueteSeleccionado.category: ''}
               onChange={handleChange}
             />
@@ -328,7 +440,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="minutos"
+              name="brand"
               value={jugueteSeleccionado ? jugueteSeleccionado.brand: ''}
               onChange={handleChange}
             />
@@ -338,7 +450,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="minutos"
+              name="origin"
               value={jugueteSeleccionado ? jugueteSeleccionado.origin: ''}
               onChange={handleChange}
             />
@@ -348,7 +460,7 @@ setJuguetesSeleccionado(elemento);
             <input
               className="form-control"
               type="text"
-              name="minutos"
+              name="cantidadAux"
               value={jugueteSeleccionado ? jugueteSeleccionado.cantidadAux: ''}
               onChange={handleChange}
             />
