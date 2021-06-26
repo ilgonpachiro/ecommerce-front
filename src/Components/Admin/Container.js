@@ -1,3 +1,5 @@
+
+
 import React, {useState} from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -150,10 +152,9 @@ function App() {
   const [modalEliminar, setModalEliminar] = useState(false);
   const [modalInsertar, setModalInsertar] = useState(false);
 
-  const listadoCompra = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+  const user = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : [];
 
 
- 
 
   const [jugueteSeleccionado, setJuguetesSeleccionado] = useState({
     id: '',
@@ -202,6 +203,7 @@ setJuguetesSeleccionado(elemento);
   }
 
   const abrirModalInsertar=()=>{
+    console.log(this.user);
     setJuguetesSeleccionado(null);
     setModalInsertar(true);
   }
@@ -263,19 +265,24 @@ setJuguetesSeleccionado(elemento);
             <th>Name</th>
             <th>Quantity</th>
             <th>Price</th>
-            <th>Brand</th>          
+            <th>Brand</th>
+            <th>Buyer</th>
+            <th>Contact</th>
+
           </tr>
         </thead>
         <tbody>
-          {listadoCompra.map(toy=>(
+        {user.items.map(product=>(
             <tr>
-              <td>{toy.info.name}</td>
-              <td>{toy.cantidad}</td>
-              <td>{toy.price}</td>
-              <td>{toy.brand}</td>
+              <td>{product.info.name}</td>
+              <td>{product.cantidad}</td>
+              <td>{product.info.price}</td>
+              <td>{product.info.brand}</td>
+              <td>{user.name}</td>
+              <td>{user.email}</td>
             </tr>
-          ))
-          }
+          ))}
+          
         </tbody>
       </table>
 

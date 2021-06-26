@@ -70,7 +70,7 @@ export default class Container extends React.Component {
 								})};
 								<div className="right-side">
 									<div className="header-widget">
-										<a href='/signIn' className="button border"><Link to="/checkout">Confirmar Carrito</Link></a>
+										<a className="button border"><Link to="/checkout">Confirmar Carrito</Link></a>
 									</div>
 								</div>
 							</div>
