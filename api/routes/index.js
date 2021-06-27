@@ -3,6 +3,7 @@
 const { Router } = require('express')
 const express = require ('express')
 const productCtrl = require('../controllers/product')
+const checkoutCtrl = require('../controllers/checkout')
 const userCtrl = require('../controllers/user')
 const auth = require('../middlewares/auth')
 const api = express.Router()
@@ -24,8 +25,9 @@ api.delete('/product/:productId',productCtrl.deleteProduct )
 api.post('/signup', userCtrl.signUp)
 api.post('/signin', userCtrl.signIn)
 
-api.get('/private', auth, (req, res) => {
-    res.status(200).send({ message: 'tienes acceso' })
+api.get('/private', auth, (req, res) => { res.status(200).send({ message: 'tienes acceso' })
+
+api.post('/checkout', checkoutCtrl.confirmCheckout)
 
 //crear Item (Carro)
 Router.post('/', async (req, res) =>{

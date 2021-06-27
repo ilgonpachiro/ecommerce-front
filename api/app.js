@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 
 // Conexión con la BBDD
 
-mongoose.connect('mongodb+srv://agbellisario:qEJltQism5zClFWv@cluster0.xvwzi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+//mongoose.connect('mongodb://db:27017')
 
 
 //seguridad user: agbellisario    password: qEJltQism5zClFWv
@@ -18,7 +18,7 @@ mongoose.connect('mongodb+srv://agbellisario:qEJltQism5zClFWv@cluster0.xvwzi.mon
 // mongodb+srv://agbellisario:<password>@cluster0.xvwzi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
 
-// app.use(express.json());
+app.use(express.json());
 app.use(express.urlencoded({
   extended: false
 }));

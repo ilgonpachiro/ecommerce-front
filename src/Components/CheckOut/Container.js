@@ -2,7 +2,8 @@ import React from 'react';
 
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import axios from 'axios';
+import { buildHostUrl } from "../../api/helpers";
 
 
 
@@ -39,9 +40,13 @@ class App extends React.Component {
       this.setState({ phone: e.target.value })
   }
 
-  onSubmit(e) {
+  async onSubmit(e) {
       e.preventDefault()
       localStorage.setItem('items', '');
+
+      //enviar el modelo por aca al backend.
+      //enviar en forma de { user: {}, products: []}
+      await axios.post(buildHostUrl('checkout'), {});
   }
 
   // React Life Cycle
